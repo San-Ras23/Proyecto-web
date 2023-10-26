@@ -1,5 +1,5 @@
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,300;1,300&display=swap');
 
 *   {
     margin: 0;
@@ -8,7 +8,7 @@
     list-style: none;
 }
 body {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     
     }
@@ -36,15 +36,17 @@ body {
    
 }
 .footer-links h4 {
-font-size: 20px;
+font-size: 18px;
 color: white;
 margin-bottom: 25px;
 font-weight: 400;
 border-bottom: 2px solid #ffffff;
-padding-bottom: 10px;
+padding-bottom: 30px;
 display: inline-block;
 font-weight: bold;
+text-align: center;
 }
+
 .footer-links p{
     font-size: 16px;
     color: white;
@@ -63,16 +65,16 @@ font-weight: bold;
     display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
-    text-align: center;
+    text-align:start;
       
 }
-  
+
 .footer-links ul li a:hover {
     color: #ffffff;
     padding-left: 6px;
     
-
 }
+
 .social-link a {
     display: inline-block;
     min-height: 40px;
@@ -85,42 +87,47 @@ font-weight: bold;
     color: #ffffff;
     transition: all .5S ease;
    }
-   .social-link a:hover {
+.social-link a:hover {
 background-color: #05090a;
 
    }
 
 .Btn-CV {
     
-    display: inline-block;
-    margin-top: 5px;
-    text-transform: uppercase;
-  color: #080808;
-  font-size: 15px;
-  padding: 15px 25px;
+display: inline-block;
+margin-top: 5px;
+ text-transform: uppercase;
+color: #080808;
+font-size: 15px;
+padding: 15px 25px;
 background-color: #ffffff;
 text-decoration: none;
+
+
 }
 
+
    
-  .Derechos{
-    color: #ffffff;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 40px;
+.Derechos{
+color: #ffffff;
+text-align: center;
+font-size: 15px;
+margin-top: 40px;
 
   }
   
   
-
-
+@media (max-width: 991px){
 .footer-row {
-        text-align: center;
-    }
+text-align: center;
+}
    
-   footer-links{
-width: 30px;
-margin-top: auto;
-   }
+.footer-links{
+width: 100%
+margin-bottom: 30px
 
-@media screen and [max-width:800px]
+}
+
+
+
+}
