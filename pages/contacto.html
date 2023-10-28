@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distribuidora Cleansis Contacto</title>
 <link rel="stylesheet" href="/Proyecto-web/assets/css/contacto-styles.css">
+<link rel="stylesheet" href="/Proyecto-web/assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
 </head>
 <body>
     <header>
@@ -67,6 +67,41 @@
     </section>
       </header>
     <main>
+<!-- main contacto -->
+<section class="contact">
+    <div class="u-wrapper">
+      <div class="contact-content">
+        <form id="form" action="" class="form">
+        <h2>Dejanos tu mensaje</h2>
+         <h3>¿En qué podemos ayudarte?</h3>
+          <label for="name">Nombre Completo <span>*</span></label>
+          <input name="name" required type="text" id="name" placeholder="Nombre">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input name="email" type="text" id="email" required placeholder="email@gmail.com">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn primary full">enviar mensaje</button>
+        </form>
+        <a href="mailto:distribuidoracleansis@gmail.com" id="trucazo"></a>
+      </div>
+    </div>
+  </section>
+  <!-- javascrip -->
+  <script>
+   const $form = document.querySelector('#form')
+   const $buttonMailto = document.querySelector('#trucazo')
+   $form.addEventListener('submit', handleSubmit)
+   function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    console.log(form.get ('name'))
+    $buttonMailto.setAttribute('href', `mailto:distribuidoracleansis@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')} &body=${form.get('message')}`)
+    $buttonMailto.click()
+   }
+  </script>
+<section class="mapa">
+</section>
+
 
     </main>
     <footer class="footer">
