@@ -18,7 +18,7 @@ Documentación Preliminar del Proyecto - Sitio Web
 
 ●	Líquidos
 
-●	
+
 
 4.	Diseño y Estilo:
 
