@@ -60,6 +60,7 @@ header {
     height: 90px;
     background-color:#06a25f;
     padding: 0px 20px;
+    justify-content: center;
     }
     
     .menu_productos{
