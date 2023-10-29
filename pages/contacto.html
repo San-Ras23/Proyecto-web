@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distribuidora Cleansis</title>
-<link rel="stylesheet" href="Proyecto-web/assets/css/contacto_style.css">
+    <title>Distribuidora Cleansis Contacto</title>
+<link rel="stylesheet" href="/Proyecto-web/assets/css/contacto-styles.css">
+<link rel="stylesheet" href="/Proyecto-web/assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
 </head>
 <body>
     <header>
@@ -67,6 +67,56 @@
     </section>
       </header>
     <main>
+<!-- main contacto -->
+<section class="contact">
+    <div class="u-wrapper">
+      <div class="contact-content">
+        <form id="form" action="" class="form">
+        <h2>Dejanos tu mensaje</h2>
+         <h3>¿En qué podemos ayudarte?</h3>
+          <label for="name">Nombre Completo <span>*</span></label>
+          <input name="name" required type="text" id="name" placeholder="Nombre">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input name="email" type="text" id="email" required placeholder="email@gmail.com">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn primary full">enviar mensaje</button>
+        </form>
+        <a href="mailto:distribuidoracleansis@gmail.com" id="trucazo"></a>
+      </div>
+    </div>
+  </section>
+  <!-- javascrip -->
+  <script>
+   const $form = document.querySelector('#form')
+   const $buttonMailto = document.querySelector('#trucazo')
+   $form.addEventListener('submit', handleSubmit)
+   function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    console.log(form.get ('name'))
+    $buttonMailto.setAttribute('href', `mailto:distribuidoracleansis@gmail.com?subject=  nombre ${form.get('name')}  correo ${form.get('email')}  &body=${form.get('message')}`)
+    $buttonMailto.click()
+   }
+  </script>
+<section class="mapa">
+    <div>
+    <h2>Nuestra sucursal</h2>
+    </div>
+    <div class="mapa_google">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.887599704989!2d-58.447683425633684!3d-34.60700365766938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca123d58364b%3A0x887a454be9afc68a!2sAv.%20Angel%20Gallardo%201075%2C%20C1405DJK%20CABA!5e0!3m2!1sen!2sar!4v1698509293763!5m2!1sen!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mapa_info">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Teléfono: 011 4444 4444</a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp: +54 9 11 5144-6970</a></li>
+            <li><a href="#"><i class="fa-regular fa-clock"></i> Horario de atención: Lun. a Vie. de 10 a 13 hs. y de 15 a 19 hs. Sáb. de 10 a 13 hs.</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> Domicilio: Angel Gallardo 1075 (1405), Caba, Bs. As.</a></li>
+        </ul>
+    </div>
+         
+</section>
+
 
     </main>
     <footer class="footer">
