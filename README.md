@@ -35,7 +35,7 @@ Documentación Preliminar del Proyecto - Sitio Web
 6.	Integrantes del Equipo y Representante:
 
 ●	Equipo: 
-●	Cecilia
+●	Cecilia Cassain
 ●	Pablo Foix
 ●	Soledad Rezza
 ●	Sandra Rasgido
