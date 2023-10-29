@@ -45,6 +45,7 @@ header {
     padding-top: 1em;
     height: 100%;
     width: 100%;
+    
     }
     
     .iconos1> a {
@@ -60,7 +61,7 @@ header {
     height: 90px;
     background-color:#06a25f;
     padding: 0px 20px;
-    justify-content: center;
+    
     }
     
     .menu_productos{
@@ -75,6 +76,11 @@ header {
     nav > ul{
         height: 100%;
         display: flex;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
     }
     nav > ul > li.menu_productos {
         height: 100%;
@@ -82,6 +88,7 @@ header {
         position: relative;
         list-style: none;
         text-decoration:none;
+       
     }
     nav > ul > li.menu_productos> a {
         width: 120px;
