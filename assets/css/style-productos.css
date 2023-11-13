@@ -15,9 +15,11 @@ main{
   height: 50px;
 }
 .producto-conteiner{
+  padding: 0 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  width: 100%;
   gap: 10px;
 }
 body {
@@ -42,7 +44,7 @@ font-size: 28px;
   justify-content: space-between;
   color: white;
   border-radius: 8px;
-  min-width: 275px;
+  width: 100%;
 }
 .ver-todos{
   color: white;
@@ -59,7 +61,7 @@ font-size: 28px;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 8px;
-  max-width: 275px;
+  width: 100%;
 }
 .logo-container {
   display: flex;
@@ -117,7 +119,7 @@ font-size: 28px;
   color: #03c774;
 }
 .acciones-container{
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 50px;
   margin-top: 20px;
@@ -172,4 +174,42 @@ font-size: 28px;
   font-size: 24px;
   padding: 8px 20px;
   cursor: pointer;
+}
+@media (min-width: 640px){
+
+}
+/*tablet*/
+@media (min-width: 767px){
+  .producto-conteiner{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+.oferta{
+  min-width: 275px;
+  max-width: 275px;
+}
+.producto{
+  max-width: 275px;
+}
+}
+/*laptop*/
+@media (min-width: 1024px){
+  .producto-conteiner{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .acciones-container{
+    display: flex;
+  }
+}
+/*desktop*/
+@media (min-width: 1280px){
+    
+}
+@media (min-width: 1536px){
+    
+}
+@media (min-width: 1920px){
+    
 }
