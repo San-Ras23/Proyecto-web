@@ -1,33 +1,30 @@
 .carrousel {
     width: 100%;
     margin: auto;
-    max-width: 120em;
     padding: 2em;
     transition: all 0.4s ease;
     border-radius: 1em;
     overflow: hidden;
   }
-  
   .carrousel .grande {
-    width: 200%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
     transition: all 0.4s ease;
     border-radius: 1em;
-    padding: 2em;
+    padding-bottom: 2em;
     transition: all 0.5s ease;
     transform: translateX(0%);
   }
-  
+  .select{
+    display: block !important;
+  }
   .carrousel .img {
-    width: calc( 100%/2  );
+    width: 100%;
+    display: none;
     min-height: 10vh;
     transition: all 0.4s ease;
     border-radius: 1em;
     align-self: center;
-    margin:1em;
   }
   
   .carrousel .puntos {
@@ -38,7 +35,6 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-   
   }
   
   .carrousel .punto {
