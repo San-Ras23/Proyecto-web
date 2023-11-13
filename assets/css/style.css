@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    margin-top: 10px;
+    padding-top: 10px;
     height: 100px;
     width: 100px;
 }
@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
     width: 100%;
     background-color: #ffffff;
 }
@@ -284,7 +283,12 @@ margin-bottom: 30px
 @media (min-width: 640px) {}
 
 /*tablet*/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+}
 
 /*laptop*/
 @media (min-width: 1024px) {
