@@ -1,63 +1,67 @@
 .carrousel {
-    width: 100%;
-    margin: auto;
-    padding: 2em 0;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    overflow: hidden;
-  }
-  .carrousel .grande {
-    display: flex;
-    align-items: center;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    padding-bottom: 2em;
-    transition: all 0.5s ease;
-    transform: translateX(0%);
-  }
-  .select{
-    display: block !important;
-  }
-  .carrousel .img {
-    width: 100%;
-    display: none;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    align-self: center;
-  }
-  
-  .carrousel .puntos {
-    width: 100%;
-    margin: 1em 0 0;
-    padding: 0.4em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carrousel .punto {
-    width: 1em;
-    height: 1em;
-    margin: 1em 1em 0;
-    color: rgb(2, 31, 41);
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    background-color: rgb(2, 31, 41);
-    position: relative;
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  
-  .carrousel .punto.activo {
-    background-color: rgb(12, 130, 237);
-  }
-  @media (min-width: 1024px){
-  .carrousel{
+  width: 100%;
+  margin: auto;
+  padding: 2em 0;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  padding-bottom: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.select {
+  display: block !important;
+}
+
+.carrousel .img {
+  width: 100%;
+  display: none;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  align-self: center;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 1em;
+  height: 1em;
+  margin: 1em 1em 0;
+  color: rgb(2, 31, 41);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: rgb(2, 31, 41);
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carrousel .punto.activo {
+  background-color: rgb(12, 130, 237);
+}
+
+@media (min-width: 1024px) {
+  .carrousel {
     padding: 2em;
   }
-  }  
+}
