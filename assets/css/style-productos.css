@@ -125,14 +125,17 @@ font-size: 28px;
   color: #03c774;
 }
 .acciones-container{
-  display: none;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
+  gap: 25px;
   margin-top: 20px;
+  padding: 0 16px;
 }
 .acciones{
   padding: 20px;
-  width: 175px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +150,12 @@ font-size: 28px;
   text-transform: uppercase;
   margin-top: 10px;
   color: white;
+}
+.accion-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .fuente-xl{
   font-weight:bold;
@@ -191,13 +200,24 @@ font-size: 28px;
     display: grid;
     grid-template-columns:repeat(2,1fr);
   }
-.oferta{
-  min-width: 275px;
-  max-width: 275px;
-}
-.producto{
-  max-width: 275px;
-}
+  .acciones{
+    width: 250px;
+  }
+  .oferta{
+    min-width: 275px;
+    max-width: 275px;
+  }
+  .novedades{
+    min-width: 275px;
+    max-width: 275px;
+  }
+  .producto{
+    max-width: 275px;
+  }
+  .acciones-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 /*laptop*/
 @media (min-width: 1024px){
@@ -208,6 +228,18 @@ font-size: 28px;
   }
   .acciones-container{
     display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .acciones{
+    width: 175px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 /*desktop*/
