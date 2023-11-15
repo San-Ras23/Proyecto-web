@@ -258,6 +258,21 @@ margin-bottom: 30px
         height: 150px;
         width: 150px;
     }
+    .footer-row{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 30px;
+    }
+    .footer{
+        padding-bottom: 200px;
+    }
+    .Derechos{
+        margin-top: 10px;
+    }
+    .footer-row h4{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*laptop*/
