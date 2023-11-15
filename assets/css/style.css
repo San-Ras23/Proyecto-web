@@ -207,7 +207,6 @@ body {
     margin-bottom: 15px;
     transition: all .3s ease;
     text-align: start;
-
 }
 
 .footer-links ul li a:hover {
@@ -244,11 +243,7 @@ body {
 .footer-row {
 text-align: center;
 }
-.footer-links{
-width: 100%;
-margin-bottom: 30px
 
-} */
 /*mobile*/
 @media (min-width: 640px) {}
 
@@ -258,18 +253,22 @@ margin-bottom: 30px
         height: 150px;
         width: 150px;
     }
-    .footer-row{
+
+    .footer-row {
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    .footer{
+
+    .footer {
         padding-bottom: 200px;
     }
-    .Derechos{
+
+    .Derechos {
         margin-top: 10px;
     }
-    .footer-row h4{
+
+    .footer-row h4 {
         display: flex;
         justify-content: center;
     }
@@ -297,11 +296,14 @@ margin-bottom: 30px
         height: 110px;
         width: 110px;
     }
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
 }
-
-/*desktop*/
-@media (min-width: 1280px) {}
-
-@media (min-width: 1536px) {}
-
-@media (min-width: 1920px) {}
