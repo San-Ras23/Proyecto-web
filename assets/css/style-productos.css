@@ -14,7 +14,12 @@ main{
   width: 50px;
   height: 50px;
 }
-.producto-conteiner{
+.producto-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productos-container{
   padding: 0 16px;
   display: flex;
   flex-direction: column;
@@ -45,6 +50,7 @@ font-size: 28px;
   color: white;
   border-radius: 8px;
   width: 100%;
+  height: 100%;
 }
 .ver-todos{
   color: white;
@@ -145,7 +151,7 @@ font-size: 28px;
 .fuente-xl{
   font-weight:bold;
 }
-.los-mas-vendidos{
+.novedades{
   background-color:rgb(12, 130, 237);
   padding: 16px;
   display: flex;
@@ -154,7 +160,8 @@ font-size: 28px;
   justify-content: space-between;
   color: white;
   border-radius: 8px;
-  min-width: 275px;
+  width: 100%;
+  height: 100%;
 }
 .ver-todos-azul {
   color: white;
@@ -180,7 +187,7 @@ font-size: 28px;
 }
 /*tablet*/
 @media (min-width: 767px){
-  .producto-conteiner{
+  .productos-container{
     display: grid;
     grid-template-columns:repeat(2,1fr);
   }
@@ -194,7 +201,7 @@ font-size: 28px;
 }
 /*laptop*/
 @media (min-width: 1024px){
-  .producto-conteiner{
+  .productos-container{
     display: flex;
     flex-direction: row;
     padding-top: 20px;
