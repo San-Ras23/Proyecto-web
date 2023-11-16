@@ -51,7 +51,7 @@ Documentación Preliminar del Proyecto - Sitio Web
 
 8.	Recursos Externos:
 
-●	Uso de la API de Google Maps para mostrar la ubicación en la página de contacto.
+●	Uso de la API de Sheet.best para formualrio de página de contacto.
 ●	Integración de formulario de   contacto.
 9.	Desarrollos Futuros y Mejoras Potenciales (Opcional)
 
