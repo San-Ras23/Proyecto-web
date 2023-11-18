@@ -12,7 +12,7 @@ formulario.addEventListener ('submit' , async(e) => {
         body: JSON.stringify ({
             "Nombre": form.name.value,
             "Email": form.email.value,
-            "Mensaje": form.message.value,
+            "Message": form.message.value,
         }) 
     } )
  
