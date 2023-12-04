@@ -20,9 +20,15 @@ from django.urls import path
 
 
 from .views import IndexPage
+from .views import EscobasPage
+from .views import SecadoresPage
+from .views import ContactoPage
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",IndexPage.as_view(),name="index")
+    path("escobas/",EscobasPage.as_view(),name="escobas")
+    path("secadores/",SecadoresPage.as_view(),name="secadores")
+    path("contacto/",ContactoPage.as_view(),name="contacto")
 ]

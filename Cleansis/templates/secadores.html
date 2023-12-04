@@ -1,14 +1,17 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Secadores - Distribuidora Cleansis</title>
-	<link rel="stylesheet" href="assets/css/secadores.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<link rel="stylesheet" href="{% static './css/secadores.css' %}">
+	<link rel="stylesheet" href="{% static './css/style.css' %}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<script src="secadores.js"></script>
+	<title>Secadores - Distribuidora Cleansis</title>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
 		<!--  Nav 1 Logo   -->
 		<section class="section_logo">
 			<a href="/index.html" class="logo">
-				<img src="/assets/media/logo-modified (1).png" alt="Logo temporal" width="110" height="110" />
+				<img src="{% static './media/logo-modified (1).png' %}" alt="Logo temporal" width="110" height="110" />
 			</a>
 
 			<!-- Buscador -->
@@ -142,7 +145,7 @@
 
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/secador1.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/secador1.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Secador aluminio reforz x 52cm</h4>
@@ -161,7 +164,7 @@
 
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/secador2.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/secador2.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Secador aluminio reforz x 80cm</h4>
@@ -179,7 +182,7 @@
 				<article class="producto">
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/respuesto secador.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/respuesto secador.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Goma secador aluminio x 100cm</h4>
@@ -198,7 +201,7 @@
 
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/secador3.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/secador3.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Secador rojo x 80cm</h4>
@@ -220,7 +223,7 @@
 
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/secador4.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/secador4.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Secador blanco x 40cm</h4>
@@ -238,7 +241,7 @@
 				<article class="producto">
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/secador5.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/secador5.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Secador goma blanco x 50cm</h4>
@@ -259,7 +262,7 @@
 					</div>
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/sopapa1.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/sopapa1.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Sopapa acordeon</h4>
@@ -278,7 +281,7 @@
 
 					<div class="detalle-producto">
 						<div class="logo-producto">
-							<img class="imagen" src="./assets/media/secadores/sopapa2.png" alt="" />
+							<img class="imagen" src="{% static './media/secadores/sopapa2.png' %}" alt="" />
 						</div>
 						<div class="descripcion">
 							<h4 class="centrado">Sopapita floppy</h4>
@@ -297,7 +300,7 @@
 			<section class="acciones-container">
 				<a href="#" class="acciones">
 					<div class="icon">
-						<img class="imagen" src="./assets/media/icons/info-svgrepo-com.svg" alt="">
+						<img class="imagen" src="{% static './media/icons/info-svgrepo-com.svg' %}" alt="">
 					</div>
 					<div class="icon-titulo">
 						<h5 class="centrado">Preguntas</h5>
@@ -306,7 +309,7 @@
 				</a>
 				<a href="#" class="acciones">
 					<div class="icon">
-						<img class="imagen" src="./assets/media/icons/delivery-svgrepo-com.svg" alt="">
+						<img class="imagen" src="{% static './media/icons/delivery-svgrepo-com.svg' %}" alt="">
 					</div>
 					<div class="icon-titulo">
 						<h5 class="centrado">Envíos a todo</h5>
@@ -315,7 +318,7 @@
 				</a>
 				<a href="/pages/contacto.html" class="acciones">
 					<div class="icon">
-						<img class="imagen" src="./assets/media/icons/icons8-registro-96.png" alt="">
+						<img class="imagen" src="{% static './media/icons/icons8-registro-96.png' %}" alt="">
 					</div>
 					<div class="icon-titulo">
 						<h5 class="centrado">alta como</h5>
@@ -324,7 +327,7 @@
 				</a>
 				<a href="#" class="acciones">
 					<div class="icon">
-						<img class="imagen" src="./assets/media/icons/tag-price-svgrepo-com.svg" alt="">
+						<img class="imagen" src="{% static './media/icons/tag-price-svgrepo-com.svg' %}" alt="">
 					</div>
 					<div class="icon-titulo">
 						<h5 class="centrado">lista de</h5>

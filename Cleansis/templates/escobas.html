@@ -1,22 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escobas - Distribuidora Cleansis</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/escobas.css">
+
+  <link rel="stylesheet" href="{% static './css/style.css' %}">
+  <link rel="stylesheet" href="{% static './css/escobas.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <script src="escobas.js"></script>
-
+  <title>Escobas - Distribuidora Cleansis</title>
 </head>
 
 <body>
   <header>
     <section class="section_logo">
       <a href="/index.html" class="logo">
-        <img src="./assets/media/logo-modified (1).png" alt="Logo" width="110" height="110" />
+        <img src="{% static './media/logo-modified (1).png' %}" alt="Logo" width="110" height="110" />
       </a>
       <div class="search">
         <input type="search" placeholder="Buscar un producto">
@@ -85,13 +86,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/barrendero.png" alt="" />
+              <img class="imagen" src="{% static './media/images/barrendero.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">Azabache Barrendero 8cm</h4>
@@ -109,12 +110,12 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="assets/media/icons/fondo-blanco-50px.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/fondo-blanco-50px.png' %}" alt="" />
             </div>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-7.5cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-7.5cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">perla escobillon 7.5cm</h4>
@@ -132,13 +133,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-topacio.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-topacio.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">topacio escobillon 10cm</h4>
@@ -156,12 +157,12 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="assets/media/icons/fondo-blanco-50px.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/fondo-blanco-50px.png' %}" alt="" />
             </div>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-8.5cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-8.5cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">zafiro escobillon 8.5cm</h4>
@@ -181,12 +182,12 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="assets/media/icons/fondo-blanco-50px.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/fondo-blanco-50px.png' %}" alt="" />
             </div>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-10cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-10cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">optimus escobillon 10cm</h4>
@@ -204,13 +205,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-ambar.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-ambar.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">ambar escobillon 8.5cm</h4>
@@ -228,14 +229,14 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="assets/media/icons/fondo-blanco-50px.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/fondo-blanco-50px.png' %}" alt="" />
             </div>
           </div>
           <div class="logo-container">
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/caliza-8.5.png" alt="" />
+              <img class="imagen" src="{% static './media/images/caliza-8.5.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">Caliza Escobillon 8.5cm</h4>
@@ -253,12 +254,12 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="assets/media/icons/fondo-blanco-50px.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/fondo-blanco-50px.png' %}" alt="" />
             </div>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/coral-10cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/coral-10cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">coral escobillon 10cm</h4>
@@ -277,7 +278,7 @@
       <section class="acciones-container">
         <a href="#" class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/info-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/info-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">Preguntas</h5>
@@ -286,7 +287,7 @@
         </a>
         <a href="#" class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/delivery-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/delivery-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">Envíos a todo</h5>
@@ -295,7 +296,7 @@
         </a href="#">
         <a href="/pages/contacto.html" class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/icons8-registro-96.png" alt="">
+            <img class="imagen" src="{% static './media/icons/icons8-registro-96.png' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">alta como</h5>
@@ -304,7 +305,7 @@
         </a href="#">
         <a href="#" class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/tag-price-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/tag-price-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">lista de</h5>
@@ -375,8 +376,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escobas - Distribuidora Cleansis</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/escobas.css">
+  <link rel="stylesheet" href="{% static './css/style.css' %}">
+  <link rel="stylesheet" href="{% static './css/escobas.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <script src="escobas.js"></script>
 
@@ -386,7 +387,7 @@
   <header>
     <section class="section_logo">
       <div class="logo">
-        <a href="#"></a><img src="./assets/media/logo-modified (1).png" alt="Logo" width="110" height="110" />
+        <a href="#"></a><img src="{% static './media/logo-modified (1).png' %}" alt="Logo" width="110" height="110" />
       </div>
       <div class="search">
         <input type="search" placeholder="Buscar un producto">
@@ -455,13 +456,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/barrendero.png" alt="" />
+              <img class="imagen" src="./{% static './media/images/barrendero.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">Azabache Barrendero 8cm</h4>
@@ -479,7 +480,7 @@
         <article class="producto">
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-7.5cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-7.5cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">perla escobillon 7.5cm</h4>
@@ -497,13 +498,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-topacio.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-topacio.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">topacio escobillon 10cm</h4>
@@ -522,7 +523,7 @@
 
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-8.5cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-8.5cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">zafiro escobillon 8.5cm</h4>
@@ -542,7 +543,7 @@
         <article class="producto">
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-10cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/escobillon-10cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">optimus escobillon 10cm</h4>
@@ -560,13 +561,13 @@
         <article class="producto">
           <div class="logo-container">
             <div class="logo-oferta">
-              <img class="imagen" src="./assets/media/icons/icons8-oferta-verde.png" alt="" />
+              <img class="imagen" src="{% static './media/icons/icons8-oferta-verde.png' %}" alt="" />
             </div>
             <h2 class="margen-corto color-verde">OFERTA</h2>
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/escobillon-ambar.png" alt="" />
+              <img class="imagen" src="./{% static './media/images/escobillon-ambar.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">ambar escobillon 8.5cm</h4>
@@ -586,7 +587,7 @@
           </div>
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/caliza-8.5.png" alt="" />
+              <img class="imagen" src="{% static './media/images/caliza-8.5.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">Caliza Escobillon 8.5cm</h4>
@@ -604,7 +605,7 @@
         <article class="producto">
           <div class="detalle-producto">
             <div class="logo-producto">
-              <img class="imagen" src="./assets/media/images/coral-10cm.png" alt="" />
+              <img class="imagen" src="{% static './media/images/coral-10cm.png' %}" alt="" />
             </div>
             <div class="descripcion">
               <h4 class="centrado">coral escobillon 10cm</h4>
@@ -623,7 +624,7 @@
       <section class="acciones-container">
         <article class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/info-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/info-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">Preguntas</h5>
@@ -632,7 +633,7 @@
         </article>
         <article class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/delivery-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/delivery-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">Envíos a todo</h5>
@@ -641,7 +642,7 @@
         </article>
         <article class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/icons8-registro-96.png" alt="">
+            <img class="imagen" src="{% static './media/icons/icons8-registro-96.png' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">alta como</h5>
@@ -650,7 +651,7 @@
         </article>
         <article class="acciones">
           <div class="icon">
-            <img class="imagen" src="./assets/media/icons/tag-price-svgrepo-com.svg" alt="">
+            <img class="imagen" src="{% static './media/icons/tag-price-svgrepo-com.svg' %}" alt="">
           </div>
           <div class="icon-titulo">
             <h5 class="centrado">lista de</h5>
