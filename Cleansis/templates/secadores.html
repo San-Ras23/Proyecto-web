@@ -1,15 +1,10 @@
+{% extends 'base_template.html' %}
 {% load static %}
+{% block contenido %}
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" href="{% static './css/secadores.css' %}">
-	<link rel="stylesheet" href="{% static './css/style.css' %}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/secadores.css' %}">
 	<script src="secadores.js"></script>
 	<title>Secadores - Distribuidora Cleansis</title>
 </head>
@@ -18,7 +13,7 @@
 	<header>
 		<!--  Nav 1 Logo   -->
 		<section class="section_logo">
-			<a href="/index.html" class="logo">
+			<a href="{% url 'index' %}l" class="logo">
 				<img src="{% static './media/logo-modified (1).png' %}" alt="Logo temporal" width="110" height="110" />
 			</a>
 
@@ -60,10 +55,10 @@
 						<a href="#"><i class="fa-solid fa-broom" style="color: #ffffff;"> Limpieza</i></a>
 						<ul class="submenu">
 							<li>
-								<a href="/escobas.html">Escobas y Escobillones</a>
+								<a href="{% url 'escobas' %}">Escobas y Escobillones</a>
 							</li>
 							<li>
-								<a href="/secadores.html">Sopapas y Secadores</a>
+								<a href="{% url 'secadores' %}">Sopapas y Secadores</a>
 							</li>
 							<li>
 								<a href="#">Cabos y Barrenderos</a>
@@ -316,7 +311,7 @@
 						<h3 class="centrado fuente-xl">El Pais</h3>
 					</div>
 				</a>
-				<a href="/pages/contacto.html" class="acciones">
+				<a href="{% url 'contacto' %}l" class="acciones">
 					<div class="icon">
 						<img class="imagen" src="{% static './media/icons/icons8-registro-96.png' %}" alt="">
 					</div>
@@ -358,7 +353,7 @@
 						<li><a href="#"> Preguntas Frecuentes</a></li>
 						<li><a href="#">Compras</a></li>
 						<li><a href="#">Envíos</a></li>
-						<li><a href="/pages/contacto.html">Contacto</a></li>
+						<li><a href="{% url 'contacto' %}">Contacto</a></li>
 
 					</ul>
 				</div>
@@ -367,7 +362,7 @@
 					<h4>SUMATE</h4>
 					<p class="CV">Si estás interesado en formar parte de nuestro Staff envianos tus datos y adjuntá tu
 						CV. </p>
-					<a class="Btn-CV" href="/pages/contacto.html" target="blank"> Sumarme </a>
+					<a class="Btn-CV" href="{% url 'contacto' %}" target="blank"> Sumarme </a>
 
 
 				</div>
@@ -387,7 +382,6 @@
 			</div>
 		</div>
 	</footer>
+	{% endblock %}
 
-</body>
 
-</html>
