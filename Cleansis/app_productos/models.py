@@ -10,14 +10,14 @@ class Producto(Model):
     """
     nombre  =  models.CharField(max_length=100, default="Nombre x")
     categoria  =  models.CharField(max_length=100, default="Categoria x", blank=False, null=False)
-    codigo  =  models.IntegerField (max_length=100, blank=False,null=False)
-    precio  =  models.IntegerField (max_length=100, blank=False,null=False)
+    codigo  =  models.IntegerField (blank=False,null=False)
+    precio  =  models.IntegerField (blank=False,null=False)
 
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos
     # que indicar directamente en la metaclase
 
-    class Meta:
+class Meta:
     db_table = "Product_table"
 
 
