@@ -1,0 +1,41 @@
+
+{% extends 'base_template.html' %} 
+{% load static %} 
+{% block content %}
+
+<main>
+  <div>
+    <h2>Productos</h2>
+    <h3><a href="{% url 'producto:create' %}">Crear un producto</a></h3>
+    <div class="list">
+      {% for producto in producto_list %}
+      <fieldset>
+        <legend>Nombre: {{producto.nombre}}</legend>
+        <ul>
+          <li>Categoria : {{producto.categoria}</li>
+          <li>Contacto: {{producto.contacto}}</li>
+          <li>Codigo: {{producto.rubro}}</li>
+          <li>Precio: {{producto.precio}}</li>
+        </ul>
+
+        <div>
+          <a href="{% url 'producto:detail' producto.id  %}">
+            Detalle de {{producto.nombre}} 🟢</a
+          >
+        </div>
+        <div>
+          <a href="{% url 'producto:delete' producto.id %}"
+            >Borrar {{producto.nombre }} ❌</a
+          >
+        </div>
+        <div>
+          <a href="{% url 'producto:update' producto.id %}"
+            >Editar {{producto.nombre }}📋</a
+          >
+        </div>
+      </fieldset>
+      {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}

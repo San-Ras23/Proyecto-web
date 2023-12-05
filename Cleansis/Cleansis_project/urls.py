@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
 
 
 
@@ -30,5 +31,8 @@ urlpatterns = [
     path("",IndexPage.as_view(),name="index"),
     path("escobas/",EscobasPage.as_view(),name="escobas"),
     path("secadores/",SecadoresPage.as_view(),name="secadores"),
-    path("contacto/",ContactoPage.as_view(),name="contacto")
+    path("contacto/",ContactoPage.as_view(),name="contacto"),
+    path("producto/",include("app_productos.urls"))
+  
+       
 ]
